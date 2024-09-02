@@ -1,0 +1,276 @@
+#container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    transition: transform 0.5s ease; 
+}
+ #title {
+          animation: colorChange 5s infinite;
+          text-align: center; 
+        font-weight: bold;
+        font-family: "Satisfy", sans-serif; 
+      }
+  @keyframes colorChange {
+          0% {
+              color: white;
+          }
+          25% {
+              color: blue;
+          }
+          50% {
+              color: green;
+          }
+          75% {
+              color: yellow;
+          }
+      }
+      #title {
+        text-align: center;
+        font-size: 36px;
+        margin-top: 50px;
+        text-align: center; 
+        font-weight: bold;
+        font-family: "Satisfy", sans-serif;
+      }
+.tab-content {
+  display: none;
+}
+.tab-content.active {
+  display: block;
+}
+
+
+#tab-content .tab-content {
+ background-color: rgba(0, 0, 0, 0.5);
+ color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+.img_div { 
+	height: 100px; 
+	width: 300px; 
+	border-radius: 30px; 
+	transition: 0.5s ease-in-out; 
+	border: 3x solid rgb(243, 235, 235); 
+ } #div1 { 
+	background-image: url( "https://th.bing.com/th/id/R.e14578f3121b7078be5fd5ccb956f98a?rik=PyXYzBY44n9Tew&riu=http%3a%2f%2flitstack.com%2fwp-content%2fuploads%2f2013%2f02%2fcolorful-pile-of-books1.jpg&ehk=%2fDWLekW4a7R0Objoe9htrcLMdbuTYurttbJT6iL%2b6W8%3d&risl=&pid=ImgRaw&r=0"); 
+} 
+#div2 { 
+	background-image: url( "https://i.pinimg.com/564x/06/86/26/0686264587bb6cbb2b6e171d96e3bcee.jpg"); 
+} 
+#div3 { 
+	background-image: url( "https://th.bing.com/th/id/OIP.Hcb5j5_9hQWUx3S6DdpxCgHaE8?rs=1&pid=ImgDetMain"); 
+} 
+#div4 { 
+	background-image: url( "https://i.pinimg.com/564x/3a/77/fe/3a77feeeb78667652f1ff4edc861bf50.jpg"); 
+} 
+.img_div:hover { 
+	height: 300px; 
+	width: 700px; 
+	opacity: 0.9; 
+	border: 6px solid rgb(176, 176, 189); 
+	cursor: pointer; 
+	background-repeat: no-repeat; 
+	background-size: cover; 
+} 
+.img_box { 
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+	height: 98vh; 
+	flex-direction: column; 
+	flex-wrap: wrap; 
+	gap: 30px; 
+	margin-top: -200px; 
+} 
+.box1 { 
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+	height: 100vh; 
+	flex-direction: column;
+   
+}
+.gallery-tab-item:nth-child(1) {
+			grid-area: top-left;
+		}
+
+   
+  #content {
+	margin-top: 50px;
+  }
+#image {
+	width: 300px;
+	height: 300px;
+  color: white;
+}
+
+#messageTextarea {
+	width: 300px;
+	margin-top: 80px;
+  color: white;
+}
+
+button {
+	margin-top: 70px;
+  color:white;
+}
+
+body {
+
+ font-family: "Satisfy", sans-serif;
+ margin: 0;
+ padding: 0;
+ overflow-x: hidden; 
+ background-image: url("https://i.pinimg.com/564x/ee/33/69/ee3369f79097a1e4c1c95742b2483a15.jpg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-size: 100% auto; 
+}
+ .tab {
+display: inline-block;
+margin-right: 10px;
+cursor: pointer;
+padding: 5px 10px;
+border: 1px solid #f10e06;
+border-radius: 5px;
+color: white;
+}
+.active-tab {
+background-color: rgb(0, 0, 0); 
+
+}
+* { 
+margin: -60; 
+padding: 0; 
+box-sizing: border-box; 
+font-family: "Satisfy", sans-serif;
+background-image: 
+		url( "https://i.pinimg.com/564x/ee/33/69/ee3369f79097a1e4c1c95742b2483a15.jpg"); 
+
+
+} 
+.parent_box { 
+display: flex; 
+justify-content: center; 
+align-items: center; 
+height: 100vh; 
+width: 100vw; 
+gap: 90px; 
+} 
+.box-container { 
+height: 80vh; 
+width: 55vw; 
+} 
+.text { 
+width: 30vw; 
+height: 10vh; 
+display: flex; 
+justify-content: center; 
+align-items: center; 
+color: rgb(241, 241, 241); 
+margin-top: -150px;
+} 
+.text:hover { 
+transform: scale(1.4); 
+transition: 2s ease-in-out;
+} 
+#box1 { 
+height: 55vh; 
+width: 40vw; 
+background-size: contain; 
+border: 7px solid rgb(245, 9, 9); 
+border-radius: 100%; 
+position: absolute; 
+left: 15vw; 
+top: 50vh; 
+background-image: 
+ url( "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/290963736/original/c7adcf72366135dd3cd112e179e78c223380441e/frontend-web-development-in-html-css-javascript.jpg"); 
+
+} 
+#box1:hover { 
+transform: scale(0.9); 
+transition: 1.5s ease-in-out; 
+} 
+#box2 { 
+height: 30vh; 
+width: 18vw; 
+background-size: cover; 
+border: 12px solid rgb(219, 169, 203); 
+border-radius: 100%; 
+position: absolute; 
+left: 42vw; 
+top: 65vh;
+background-image: 
+ url( "https://i.pinimg.com/564x/ea/29/89/ea2989f1efbb71387aab7ed2f91e8707.jpg");  } 
+#box2:hover { 
+transform: scale(1.2); 
+transition: 1.5s ease-in-out; 
+
+} 
+#box5 { 
+height: 30vh; 
+width: 18vw; 
+background-size: cover; 
+border: 12px solid rgb(250, 9, 170); 
+border-radius: 100%; 
+position: absolute; 
+left: 80vw; 
+top: 40vh; 
+background-image: 
+ url( "https://i.pinimg.com/564x/36/c6/ba/36c6ba7928174e5975998c111343b914.jpg"); 
+} 
+#box5:hover { 
+transform: scale(1.2); 
+transition: 1.5s ease-in-out; 
+} 
+#box3 { 
+height:20vh; 
+width: 17vw; 
+
+border-radius: 100%; 
+position: absolute; 
+left: 5vw; 
+top: 50vh; 
+border: 12px solid rgb(7, 253, 7); 
+
+background-image: 
+ url( "https://i.pinimg.com/564x/c7/e7/ba/c7e7baff1cd3171214a804d1013bf142.jpg");
+} 
+#box3:hover { 
+transform: scale(1.2); 
+transition: 0.7s ease-in-out; 
+ 
+} 
+#box4 { 
+height: 30vh; 
+width: 20vw; 
+border-radius: 100%; 
+position: absolute; 
+left: 5vw; 
+top: 90vh; 
+border: 13px solid rgb(237, 253, 4); 
+}
+#box4:hover { 
+transform: scale(1.2); 
+transition: 1s ease-in-out; 
+} 
+#box6 { 
+height: 30vh; 
+width: 18vw; 
+background-size: cover; 
+border: 12px solid rgb(11, 245, 225); 
+border-radius: 100%; 
+position: absolute; 
+left: 60vw; 
+top: 90vh; 
+} 
+#box6:hover { 
+transform: scale(1.2); 
+transition: 1.5s ease-in-out; 
+} 
+img {
+border-radius: 200%;
+}
+
+
